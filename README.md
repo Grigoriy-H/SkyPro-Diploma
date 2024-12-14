@@ -23,7 +23,10 @@ pytest test_api.py команда для запуска только АПИ те
 pytest test_ui.py команда для запуска только UI тестов
 
 pytest - команда для запуска всех тестов
-Ссылка на итоговый проект ручного тестирования: https://skypro-aks.yonote.ru/doc/finalnyj-proekt-po-ruchnomu-testirovaniyu-aviasales-h8hBUKHelt       g.halimanoff@gmail.com    Пароль: Aks18033704
+Ссылка на итоговый проект ручного тестирования: https://skypro-aks.yonote.ru/doc/finalnyj-proekt-po-ruchnomu-testirovaniyu-aviasales-h8hBUKHelt       
+
+Имя:  g.halimanoff@gmail.com      Пароль: Aks18033704
+
 
 
 Команды для генерации отчёта Allure:

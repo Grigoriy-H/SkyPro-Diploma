@@ -12,7 +12,7 @@ from main_page import MainPage
 @allure.title("Проверка открытия страницы aviasales.ru и автоматическое заполнение города")
 @allure.severity("medium")
 def test_open_page():
-    current_city = "Саратов" #Подставить город, где вы находитесь (с аэропортом)
+    current_city = "Волгоград" #Подставить город, где вы находитесь (с аэропортом)
     with allure.step("Открыть страницу"):
         main_page = MainPage(driver)
     with allure.step("Проверка автоматического заполнения города"):
@@ -24,9 +24,9 @@ def test_open_page():
 def test_hotels():
     main_page = MainPage(driver)
     with allure.step("Заполнить город отправления"):
-        main_page.fill_origin("Саратов")
+        main_page.fill_origin("Волгоград")
     with allure.step("Заполнить город назначения"):
-        main_page.fill_destination("Новокузнецк")
+        main_page.fill_destination("Москва")
     main_page.open_calender()
     main_page.choose_date("12.12.2024")
     main_page.click_search()

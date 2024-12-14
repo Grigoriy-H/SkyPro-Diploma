@@ -13,7 +13,7 @@ my_headers = {
 @allure.severity("blocker")
 def test_get_oneway_positive() -> str:
     city1 = "MOW"
-    city2 = "STW"
+    city2 = "VOG"
     date = "2024-12-15"
     with allure.step("Получение списка билетов в одну сторону"):
         tickets_list = requests.get(baseURL_api + f'origin_iata={city1}&destination_iata={city2}&depart_start={date}&depart_range=6&return_range=6&affiliate=false&market=ru', headers=my_headers)
@@ -27,7 +27,7 @@ def test_get_oneway_positive() -> str:
 @allure.severity("blocker")
 def test_get_twoways_positive() -> str:
     city1 = "MOW"
-    city2 = "STW"
+    city2 = "VOG"
     date1 = "2024-12-15"
     date2 = "2024-12-25"
     with allure.step("Получение списка билетов в обе стороны"):
@@ -42,7 +42,7 @@ def test_get_twoways_positive() -> str:
 @allure.severity("blocker")
 def test_get_date_31_positive() -> str:
     city1 = "MOW"
-    city2 = "STW"
+    city2 = "VOG"
     date1 = "2024-12-15"
     date2 = "2024-12-31"
     with allure.step("Получение списка билетов на дату 31 месяца с 31 днями"):
